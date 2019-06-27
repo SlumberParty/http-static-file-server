@@ -9,12 +9,12 @@ describe('application routes', () => {
         expect(res.text).toEqual(expect.stringContaining('YOU ARE A BADASS AT CODE'));
       });
   });
-  // it('returns 404 if we hit a bad path', () => {
-  //   return request(app)
-  //     .get('/badPath')
-  //     .then(res => {
-  //       expect(res.status).toEqual(404);
-  //       expect(res.test).toEqual(expect.stringContaining('Sorry! Borked!'));
-  //     });
-  // });
+  it('returns 404 if we hit a bad path', () => {
+    return request(app)
+      .get('/badPath')
+      .then(res => {
+        expect(res.status).toEqual(404);
+        expect(res.test).toEqual(expect.stringContaining('Sorry! Borked!'));
+      });
+  });
 });
