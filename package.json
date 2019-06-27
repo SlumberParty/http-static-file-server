@@ -1,0 +1,29 @@
+{
+  "name": "http-static-file-server",
+  "version": "1.0.0",
+  "description": "## goal create a public directory that contains an html page. Make it so when a user goes to a specific URL that the html page loads. If the user tries anything else respond with a Not Found html page and message.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./javascript-review/http/index.js",
+    "start:watch": "nodemon index.js",
+    "test": "jest --verbose --runInBand",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlumberParty/http-static-file-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SlumberParty/http-static-file-server/issues"
+  },
+  "homepage": "https://github.com/SlumberParty/http-static-file-server#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
