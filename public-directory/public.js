@@ -29,10 +29,10 @@ const app = createServer((req, res) => {
   if(pathname === '/') {
     res.end(makePage('YOU ARE A BADASS AT CODE'));
   }
-  // } else {
-  //   res.statusCode = 404;
-  //   res.end(makePage('Sorry! Borked!'));
-  // }
+  } else {
+    res.statusCode = 404;
+    res.end(makePage('Sorry! Borked!'));
+  }
 });
 
 module.exports = app;
