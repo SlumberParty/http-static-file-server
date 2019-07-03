@@ -1,5 +1,7 @@
-const app = require('./public-directory/public.js');
+const app = require('./lib/app');
 
-app.listen(7890, () => {
-  console.log('Listening')
+const PORT = process.env.PORT || 7890;
+
+app.listen(PORT, () => {
+  console.log('Listening');
 });

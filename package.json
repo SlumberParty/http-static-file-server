@@ -4,10 +4,10 @@
   "description": "## goal create a public directory that contains an html page. Make it so when a user goes to a specific URL that the html page loads. If the user tries anything else respond with a Not Found html page and message.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./javascript-review/http/index.js",
-    "start:watch": "nodemon index.js",
     "test": "jest --verbose --runInBand",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "start": "node index.js",
+    "start:watch": "nodemon index.js"
   },
   "repository": {
     "type": "git",
