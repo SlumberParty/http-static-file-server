@@ -18,7 +18,7 @@ describe('app static server', () => {
       .get('/index.html')
       .then(res => {
         expect(res.status).toEqual(200);
-        expect(res.text).toEqual(expect.stringContaining('<h1>Welcome!</h1>'));
+        expect(res.text).toEqual(expect.stringContaining('<h1>You did it!</h1>'));
       });
   });
 
