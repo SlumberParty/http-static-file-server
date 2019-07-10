@@ -5,12 +5,12 @@ const { getFilePath } = require('../lib/utils/filePath');
 describe('app static server', () => {
   it('get a file path from url pathname', () => {
     const filePath = getFilePath('/index.html');
-    expect(filePath).toEqual(expect.stringContaining('/public/index.html'));
+    expect(filePath).toEqual(expect.stringContaining('/public-directory/index.html'));
   });
 
-  it('get a file path from url pathname but stays in public', () => {
+  it('get a file path from url pathname but stays in public-directory', () => {
     const filePath = getFilePath('/../index.html');
-    expect(filePath).toEqual(expect.stringContaining('/public/index.html'));
+    expect(filePath).toEqual(expect.stringContaining('/public-directory/index.html'));
   });
 
   it('gets an index.html if we request it', () => {
